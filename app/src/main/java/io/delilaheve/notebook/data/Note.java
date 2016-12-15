@@ -96,6 +96,9 @@ public class Note implements Comparable, Serializable{
     }
 
     public NoteListItem[] getItems() {
+        if(items == null)
+            return null;
+
         return items.toArray(new NoteListItem[items.size()]);
     }
 

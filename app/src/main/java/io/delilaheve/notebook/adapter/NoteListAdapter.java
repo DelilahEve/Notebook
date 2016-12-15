@@ -105,9 +105,7 @@ public class NoteListAdapter extends Adapter {
             if(note.isAdShell()) {
                 view = getInflater().inflate(R.layout.card_ad, parent, false);
                 NativeExpressAdView adView = (NativeExpressAdView) view.findViewById(R.id.ad_view);
-                AdRequest request = new AdRequest.Builder()
-                        //.addTestDevice(testId)
-                        .build();
+                AdRequest request = new AdRequest.Builder().build();
                 if (Common.freeMode && !Settings.getPurchasedUpgrade()) {
                     adView.loadAd(request);
                 }

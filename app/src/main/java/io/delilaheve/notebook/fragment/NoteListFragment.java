@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.res.ResourcesCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.ActionMode;
@@ -176,7 +177,7 @@ public class NoteListFragment extends Fragment implements IUpdatable {
             if(Build.VERSION.SDK_INT >= 21)
                 cardSelected = context.getDrawable(R.drawable.card_background_selected);
             else
-                cardSelected = context.getResources().getDrawable(R.drawable.card_background_selected);
+                cardSelected = ResourcesCompat.getDrawable(getResources(), R.drawable.card_background_selected, null);
 
             Common.getDrawerToggle().addOpenListener(this);
         }
@@ -186,8 +187,11 @@ public class NoteListFragment extends Fragment implements IUpdatable {
             if (selectMode) {
                 Note n = (Note) adapter.getItem(position);
 
+                if(n == null)
+                    return;
+
                 if(!n.isAdShell()) {
-                    if (n != null && !notes.contains(n)) {
+                    if (!notes.contains(n)) {
                         view.setBackground(cardSelected);
                         notes.add(n);
                     }

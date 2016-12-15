@@ -11,6 +11,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.IBinder;
+import android.support.v4.content.res.ResourcesCompat;
 
 import com.android.vending.billing.IInAppBillingService;
 
@@ -108,7 +109,7 @@ public class Tools {
         if(Build.VERSION.SDK_INT >= 21)
             d = context.getDrawable(R.drawable.colour_pallete_sample);
         else
-            d = context.getResources().getDrawable(R.drawable.colour_pallete_sample);
+            d = ResourcesCompat.getDrawable(context.getResources(), R.drawable.colour_pallete_sample, null);
 
         d.setColorFilter(colour, PorterDuff.Mode.MULTIPLY);
 

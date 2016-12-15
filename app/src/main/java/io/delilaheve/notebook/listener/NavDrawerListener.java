@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
@@ -135,9 +136,9 @@ public class NavDrawerListener {
             }
             else {
                 if(Settings.getAppTheme() == Keys.THEME_LIGHT)
-                    checkIcon = context.getResources().getDrawable(R.drawable.ic_selected_dark);
+                    checkIcon = ResourcesCompat.getDrawable(context.getResources(), R.drawable.ic_selected_dark, null);
                 else
-                    checkIcon = context.getResources().getDrawable(R.drawable.ic_selected_light);
+                    checkIcon = ResourcesCompat.getDrawable(context.getResources(), R.drawable.ic_selected_light, null);
             }
 
             Common.getDrawerToggle().addOpenListener(this);
