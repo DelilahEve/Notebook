@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_app" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="?attr/background_app" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:textColor="?attr/text_normal"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/title_style" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/option_light"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/option_light" />
+
+                    <View
+                        android:id="@+id/background_prev_light"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/colour_pallete_sample" />
+
+                    <View
+                        android:id="@+id/background_prev_light_alt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/colour_pallete_sample" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/option_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/option_dark" />
+
+                    <View
+                        android:id="@+id/background_prev_dark"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/colour_pallete_sample" />
+
+                    <View
+                        android:id="@+id/background_prev_dark_alt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/colour_pallete_sample" />
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:textColor="?attr/text_normal"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/title_colour" />
+
+            <LinearLayout
+                android:id="@+id/theme_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground" >
+
+                <View
+                    android:id="@+id/primary_free_sample"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/colour_pallete_sample" />
+
+                <View
+                    android:id="@+id/secondary_free_sample"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/colour_pallete_sample" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:textColor="?attr/text_normal"
+                    android:text="@string/title_theme" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/ic_more" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/primary_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground" >
+
+                <View
+                    android:id="@+id/primary_sample"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/colour_pallete_sample" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:textColor="?attr/text_normal"
+                    android:text="@string/option_primary" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/ic_more" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="?attr/text_faded" />
+
+            <LinearLayout
+                android:id="@+id/secondary_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground" >
+
+                <View
+                    android:id="@+id/secondary_sample"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/colour_pallete_sample" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="6dp"
+                    android:textColor="?attr/text_normal"
+                    android:text="@string/option_secondary" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/ic_more" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:visibility="gone"
+                android:background="?attr/text_faded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:visibility="gone"
+                android:background="?attr/text_faded" />
+
+            <TextView
+                android:id="@+id/reset_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="12dp"
+                android:gravity="center"
+                android:textColor="?attr/text_normal"
+                android:text="@string/option_reset_theme"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:textColor="?attr/text_faded"
+                android:text="@string/hint_theme_apply" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/toolbar_basic" />
+
+</RelativeLayout>

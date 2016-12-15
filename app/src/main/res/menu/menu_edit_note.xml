@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/delete"
+        android:icon="?attr/ic_delete_alt"
+        android:title="@string/menu_delete"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="0" />
+
+    <!--item
+        android:id="@+id/toggle_temp"
+        android:icon="?attr/ic_temp_off"
+        android:title="@string/menu_make_temp"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1" /-->
+
+    <item
+        android:id="@+id/toggle_preview"
+        android:icon="?attr/ic_preview_on"
+        android:title="@string/menu_toggle_preview_off"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2" />
+
+</menu>

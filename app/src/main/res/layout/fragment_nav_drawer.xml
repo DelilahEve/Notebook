@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_app" >
+
+    <LinearLayout
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colour_primary"
+        android:paddingTop="26dp"
+        android:paddingBottom="26dp"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="?attr/ic_theme"
+            android:gravity="center_vertical"
+            android:textColor="?attr/text_title"
+            android:textSize="20sp"
+            android:text="@string/title_theme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/style_sample"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/colour_pallete_sample" />
+
+            <View
+                android:id="@+id/primary_sample"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/colour_pallete_sample" />
+
+            <View
+                android:id="@+id/secondary_sample"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/colour_pallete_sample" />
+
+            <View
+                android:id="@+id/accent_sample"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:visibility="gone"
+                android:background="@drawable/colour_pallete_sample" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="?attr/text_title"
+            android:text="@string/hint_edit_theme"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/notebook_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:choiceMode="multipleChoice" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end" >
+
+        <TextView
+            android:id="@+id/editing_notebooks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"
+            android:textColor="?attr/text_faded"
+            android:text="@string/hint_clear_selection"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <ImageView
+            android:id="@+id/delete_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="6dp"
+            android:layout_gravity="center_vertical"
+            android:src="?attr/ic_delete"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <ImageView
+            android:id="@+id/new_notebook"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="6dp"
+            android:layout_gravity="center_vertical"
+            android:src="?attr/ic_new"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="?attr/ic_settings"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textColor="?attr/text_normal"
+        android:text="@string/title_settings"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground" />
+
+</LinearLayout>

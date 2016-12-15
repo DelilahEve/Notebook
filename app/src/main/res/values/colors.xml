@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="colour_primary">#673AB7</color>
+    <color name="colour_primary_dark">#4A148C</color>
+    <color name="colour_accent">#AB47BC</color>
+
+    <color name="background_light">#F7F7F7</color>
+    <color name="background_dark">#303030</color>
+    <color name="dialog_background_light">#FFFFFF</color>
+    <color name="dialog_background_dark">#424242</color>
+
+    <color name="card_shadow_light">#DDDDDD</color>
+    <color name="card_shadow_dark">#111111</color>
+    <color name="card_shadow_pressed_light">#CCCCCC</color>
+    <color name="card_shadow_pressed_dark">#444444</color>
+
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_light_faded">#A7A7A7</color>
+    <color name="text_dark">#222222</color>
+    <color name="text_dark_faded">#6f6f6f</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#222222</color>
+
+    <color name="faded_transparent_screen">#88222222</color>
+
+    <color name="activated_light">#33aaaaaa</color>
+    <color name="activated_dark">#33555555</color>
+    <color name="colour_selected">#33AB47BC</color>
+
+</resources>

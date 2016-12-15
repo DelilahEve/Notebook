@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_app" >
+
+    <LinearLayout
+        android:id="@+id/notebook_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground" >
+
+        <EditText
+            android:id="@+id/notebook_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:textColor="?attr/text_normal"
+            android:textColorHint="?attr/text_faded"
+            android:hint="@string/hint_notebook_name"/>
+
+        <ImageView
+            android:id="@+id/expand_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="?attr/ic_expand"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expandable_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pick_colour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="?attr/selectableItemBackground" >
+
+            <View
+                android:id="@+id/color_preview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="?attr/text_normal"
+                android:text="@string/title_colour" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/notebook_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:hint="@string/hint_opt_password"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:src="?attr/ic_delete"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+</LinearLayout>

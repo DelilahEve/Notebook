@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp" >
+
+    <EditText
+        android:id="@+id/notebook_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textColor="?attr/text_normal"
+        android:textColorHint="?attr/text_faded"
+        android:hint="@string/hint_notebook_name"
+        android:inputType="textAutoCorrect" />
+
+    <TextView
+        android:id="@+id/name_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:text="@string/error_no_name" />
+
+    <EditText
+        android:id="@+id/notebook_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textColor="?attr/text_normal"
+        android:textColorHint="?attr/text_faded"
+        android:hint="@string/hint_opt_password"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/pick_colour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="?attr/selectableItemBackground" >
+
+        <View
+            android:id="@+id/color_preview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="?attr/text_normal"
+            android:text="@string/title_colour" />
+
+    </LinearLayout>
+
+</LinearLayout>
